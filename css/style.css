@@ -1,0 +1,136 @@
+/* Karla font*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  font-size: 100%;
+  box-sizing: border-box;
+  /* Variables for recurring colors */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  padding: 15% 0;
+}
+
+h1 {
+  color: var(--cyan);
+  font-size: 1.65em;
+}
+
+h1 + p {
+  color: var(--bright-yellow);
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.4em
+}
+
+footer {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  filter: drop-shadow(0 0 .75em var(--grayish-blue));
+}
+
+.box {
+  color: var(--grayish-blue);
+  padding: 7.5%;
+}
+
+.box:first-of-type {
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  line-height: 1.75;
+}
+
+.box:nth-of-type(2) {
+  color: #fff;
+  background-color: var(--cyan);
+}
+
+.box:last-of-type {
+  color: #fff;
+  background-color: hsl(179, 40%, 54%);
+  border-radius: 0 0 5px 5px;
+}
+
+.price {
+  font-size: 2em;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.per-month, .box ul {
+  opacity: .80;
+}
+
+.full-access {
+  margin-bottom: 30px;
+}
+
+.sign-up {
+  display: block;
+  background-color: var(--bright-yellow);
+  color: #fff;
+  font-size: 1.15em;
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  filter: drop-shadow(0 .3em .25em hsl(179, 62%, 33%));
+  cursor: pointer;
+  transition: background-color .25s ease-in;
+}
+
+.sign-up:hover, .sign-up:focus {
+  background-color: hsl(71, 73%, 46%);
+}
+
+.box ul {
+  list-style: none inside;
+  padding-left: 0;
+  line-height: 1.5;
+}
+
+/* for larger screens */
+@media screen and (min-width: 992px) {
+  body {
+    padding: 5% 0;
+  }
+  .container {
+    width: 50%;
+    max-width: 950px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .box {
+    padding: 6%;
+  }
+  .box:first-of-type {
+    grid-column: 1 / 3;
+  }
+  .box:first-of-type p {
+    margin: 5px 0px;
+  }
+  .box:nth-of-type(2) {
+    border-radius: 0 0 0 5px;
+  }
+  .box:last-of-type {
+    border-radius: 0 0 5px 0;
+  }
+}
