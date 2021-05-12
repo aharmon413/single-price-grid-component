@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [View solution page on Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [View solution page on Frontend Mentor](https://www.frontendmentor.io/solutions/first-challenge-single-price-grid-with-mobilefirst-css-grid-dTCTGqQTW)
 - Live Site URL: [View live site on Github Pages](https://aharmon413.github.io/single-price-grid-component/)
 
 ## My process
